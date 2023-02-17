@@ -11,6 +11,10 @@ const Budget = () => {
             return;
         }
 
+        if(new_budget === ""){
+            new_budget = 0
+        }
+
         dispatch({
             type: 'SET_BUDGET',
             payload: parseInt(new_budget),

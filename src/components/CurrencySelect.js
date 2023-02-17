@@ -31,15 +31,13 @@ const CurrencySelect = () => {
     };
 
     return (
-        <div className='alert alert-success'>
-            <select className="custom-select" id="currencySelector" onChange={(event) => changeCurrency(event.target.value)}>
+            <select className="custom-select alert alert-success" id="currencySelector" onChange={(event) => changeCurrency(event.target.value)}>
                 <option defaultValue>Currency ({currency} {currencyName(currency)})</option>
                 <option value="$" name="dollar">$ Dollar</option>
                 <option value="£" name="pound">£ Pound</option>
                 <option value="€" name="euro">€ Euro</option>
                 <option value="₹" name="ruppee">₹ Ruppee</option>
             </select>
-        </div>
     );
 };
 
